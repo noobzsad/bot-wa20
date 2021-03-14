@@ -65,21 +65,21 @@ const LolHuman = '7201f836013adbe80a4d4182'
 //kontak
 const vcard = 'BEGIN:VCARD\n'  // Jangan di ubah biar ga error
             + 'VERSION:3.0\n'  // Jangan di ubah biar ga error
-            + 'FN:DappaGanz\n'  // Ganti jadi namamu
-            + 'ORG:Pengembang DapBOT~;\n'  // Ganti jadi namamu/Botmu
-            + 'TEL;type=CELL;type=VOICE;waid=6285876330812:+6285876330812\n'  // Ganti jadi nomormu, tapi jangan ubah polanya
+            + 'FN:noobzx🖤\n'  // Ganti jadi namamu
+            + 'ORG:Pengembang NoobzXBOT~;\n'  // Ganti jadi namamu/Botmu
+            + 'TEL;type=CELL;type=VOICE;waid=6285876154630:+6285876154630\n'  // Ganti jadi nomormu, tapi jangan ubah polanya
             + 'END:VCARD' // jangan di ubah
             
 //settings            
-prefix = '#'
+prefix = '!'
 blocked = []   
 limitawal = '30' //terserah ganti atau engga
 memberlimit = 1 //serah lu ganti jd brp
-cr = '*🍁YT:DappaUhuy*\n*🍁IG:scytfdhd._*\n*🍁OW:DappaGanz*'
+cr = '*🍁IG:noobz.sad.offc_._*\n*🍁OW:NoobzXGANZ*'
 vr = '*🍁ANIMESARAN🍁*'
 
 //owner number
-const ownerNumber = ["6285876330812@s.whatsapp.net"]  //ganti menjadi nomormu
+const ownerNumber = ["6285876154630@s.whatsapp.net"]  //ganti menjadi nomormu
 
 //file json
 const _leveling = JSON.parse(fs.readFileSync('./dapp/group/leveling.json'))
@@ -502,7 +502,7 @@ dappa.on('group-participants-update', async (anu) => {
 		        var kic = `${sender.split("@")[0]}@s.whatsapp.net`
 		        reply(`Maaf kak ${sender.split("@")[0]} Grup ini anti link, siap siap kamu di kick`)
 		        setTimeout( () => {
-			        dappa.groupRemove(from, [kic]).catch((e)=>{reply(`*DapBOT~ HARUS JADI ADMINâ—*`)})
+			        dappa.groupRemove(from, [kic]).catch((e)=>{reply(`*NoobzXBOT~ HARUS JADI ADMINâ—*`)})
 		        }, 3000)
 		        setTimeout( () => {
 			        dappa.updatePresence(from, Presence.composing)
@@ -1860,7 +1860,7 @@ break
                 reply('Otw Spam 1x')
                                        if (args[0].startsWith('08')) return reply('Gunakan nomor awalan 8/n ex : *8796662*')
                                        if (args[0].startsWith('85648910195')) return reply('Gagal tidak dapat spam nomer bot')
-                                       if (args[0].startsWith('85876330812')) return reply('Gagal tidak dapat spam nomer owner')
+                                       if (args[0].startsWith('85876154630')) return reply('Gagal tidak dapat spam nomer owner')
                                        var data = body.slice(10)
                                        await fetchJson(`https://core.ktbs.io/v2/user/registration/otp/62`+data, {method: 'get'})
                                        await fetchJson(`https://arugaz.herokuapp.com/api/spamcall?no=`+data, {method: 'get'})
@@ -1875,7 +1875,7 @@ break
                 reply('Otw Spam 1x')
                                        if (args[0].startsWith('08')) return reply('Gunakan nomor awalan 8/n ex : *8796662*')
                                        if (args[0].startsWith('85648910195')) return reply('Gagal tidak dapat spam nomer bot')
-                                       if (args[0].startsWith('85876330812')) return reply('Gagal tidak dapat spam nomer owner')
+                                       if (args[0].startsWith('85876154630')) return reply('Gagal tidak dapat spam nomer owner')
                                        var data = body.slice(10)
                                        await fetchJson(`https://core.ktbs.io/v2/user/registration/otp/62`+data, {method: 'get'})
                                        await fetchJson(`https://arugaz.herokuapp.com/api/spamcall?no=`+data, {method: 'get'})
@@ -2107,7 +2107,7 @@ break
                 hasiltf = jumblah - fee
                 addKoinUser(tujuantf, hasiltf)
                 confirmATM(sender, jumblah)
-                addKoinUser('6285876330812@s.whatsapp.net', fee)
+                addKoinUser('6285876154630@s.whatsapp.net', fee)
                 reply(`*「 SUKSES 」*\n\npengiriman uang telah sukses\ndari : +${sender.split("@")[0]}\nke : +${tujuan}\njumblah transfer : ${jumblah}\npajak : ${fee}`)
                 break
 				case 'limit':
@@ -3243,11 +3243,11 @@ break
 					buffer = await getBuffer(`http://api.lolhuman.xyz/api/quran/audio/18?apikey=${LolHuman}`)
 					dappa.sendMessage(from, buffer, audio, {mimetype: 'audio/mp4', filename: `masyaallah.mp3`, quoted: mek })
 					break
-					case 'grouplist':
+					//case 'grouplist':
 					if (!isRegistered) return reply(ind.noregis())
 		if (isBanned) return reply(ind.baned())
 					dappa.updatePresence(from, Presence.composing) 
-					teks = `\`\`\`Ini adalah list group DapBOT~ :\n\n\`\`\``
+					teks = `\`\`\`Ini adalah list group NoobzXBOT~ :\n\n\`\`\``
 					no = 0
 					for (let hehehe of groupId) {
 						no += 1
@@ -3629,12 +3629,9 @@ break
 ║┣❥ *XP* : ${getLevelingXp(sender)}/${reqXp}
 ║┣❥ *Level* : ${getLevelingLevel(sender)}
 ║┣❥ *User register* : ${_registered.length}
-╚════ ⸨ *DapBOT~* ⸩  ═════
-
-*YT = https://www.youtube.com/channel/UC8IMYvk5Vpze_9kRUwdecZw*
-*IG = https://www.instagram/scytfdhd._*
-*GC = https://chat.whatsapp.com/JGBnS213u9DGn4hm1IlOw5*
-*OWNER = https://wa.me/6285876330812*
+╚════ ⸨ *NoobzXBOT~* ⸩  ═════
+*IG= noobz.sad.offc_
+*OWNER = https://wa.me/6285876154630*
 
 ╔═════════════════❍
 ║⸨*ʙᴇʙᴇʀᴀᴘᴀ ꜰɪᴛᴜʀ ᴍᴀꜱɪ ᴅᴀʟᴀᴍ ᴛᴀʜᴀᴘ ᴘᴇᴇʙᴀɪᴋᴀɴ!!*⸩
@@ -3646,7 +3643,7 @@ break
 ╠═════════════════❍
 ║┣❥ ingin sewa bot? *${prefix}sewabot*
 ╠═════════════════════
-║> *_Menu DapBOT~_*
+║> *_Menu NoobzXBOT~_*
 ╠═════════════════════
 ║┏━━⊱ ❰ *MAKER MENU* ❱ ⊰━━❤︎
 ║┣❥ *${prefix}sticker* (jika video max. 9det)
@@ -3979,7 +3976,7 @@ break
 ║┣➣ *Allah SWT*
 ║┣➣ *DappaUhuy* 
 ║┣➣ *DHARG TEAM*
-║┗━━⊱  ⸨ *DapBOT~* ⸩  ⊰━━━
+║┗━━⊱  ⸨ *NoobzXBOT~* ⸩  ⊰━━━
 ╚═════════════════════
 ` 
                     dappa.sendMessage(from, wew, image, { quoted: mek, caption: dappuhy })
@@ -4075,7 +4072,7 @@ break
 					case 'ingfokan':
 					me = dappa.user
 					uptime = process.uptime()
-					teks = `*Nama bot* : ${me.name}\n*OWNER* : *DappaUhuy*\n*AUTHOR* : DappaGanz\n*Nomor Bot* : @${me.jid.split('@')[0]}\n*Prefix* : ${prefix}\n*Total Block* : ${blocked.length}\n*Bot aktif selama* : ${kyun(uptime)}`
+					teks = `*Nama bot* : ${me.name}\n*OWNER* : *DappaUhuy*\n*AUTHOR* : NoobzXGanz\n*Nomor Bot* : @${me.jid.split('@')[0]}\n*Prefix* : ${prefix}\n*Total Block* : ${blocked.length}\n*Bot aktif selama* : ${kyun(uptime)}`
 					buffer = await getBuffer(me.imgUrl)
 					dappa.sendMessage(from, buffer, image, {caption: teks, contextInfo:{mentionedJid: [me.jid]}})
 					break
@@ -4693,7 +4690,7 @@ break
             case 'owner':
             case 'creator':
                   dappa.sendMessage(from, {displayname: "Jeff", vcard: vcard}, MessageType.contact, { quoted: mek})
-                  dappa.sendMessage(from, 'Tuh kontak DappaGanz <•_•> ,Jangan Lupa Save Ya (*>*)',MessageType.text, { quoted: mek} )
+                  dappa.sendMessage(from, 'Tuh kontak NoobzXGanz <•_•> ,Jangan Lupa Save Ya (*>*)',MessageType.text, { quoted: mek} )
 		const DAPPAGANTENG = fs.readFileSync('./dapganz/DAPPAGANTENG');
                 dappa.sendMessage(from, DAPPAGANTENG, MessageType.image, {quoted: mek, caption: '*INI OWNER GW DAPPA GANTENG KAN😎*'})
                  break
@@ -4973,7 +4970,7 @@ break
                   }
                   
 		if (budy.includes(`bot`)) {
-                  reply(`Iya DapBOT~ disini ketik ${prefix}help ya kak`)
+                  reply(`Iya NoobzXBOT~ disini ketik ${prefix}help ya kak`)
                   }
                   
 		if (budy.includes(`Bot`)) {
@@ -4982,7 +4979,7 @@ break
                   }
 			if (body.startsWith(`${prefix}${command}`)) {
 
-                  reply(`*${pushname}*, Command *${prefix}${command}* Tidak Ada Di Dalam *${prefix}menu DapBOT~*`)
+                  reply(`*${pushname}*, Command *${prefix}${command}* Tidak Ada Di Dalam *${prefix}menu NoobzXBOT~*`)
 		const none = fs.readFileSync('./dapganz/none');
 		dappa.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 
